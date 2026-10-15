@@ -3,11 +3,13 @@ import java.util.Scanner;
 public class bmi {
 	public static void main(String[] args) {
 		Scanner weight = new Scanner(System.in);
+		weight.useLocale(java.util.Locale.ENGLISH);
 		System.out.println("Bitte Gewicht eingeben: ");
 		float gewicht = weight.nextFloat();
 		
 		System.out.println("Bitte Körpergröße eingeben: ");
 		Scanner height = new Scanner(System.in);
+		height.useLocale(java.util.Locale.ENGLISH);
 		
 		float grösse = height.nextFloat();
 		float bmi = 0;
@@ -19,10 +21,10 @@ public class bmi {
 			System.out.println("Somit bist du übergewichtig.");
 		}
 		else if(bmi < 18.5) {
-			System.out.println("Somit bist du untergewichtig");
+			System.out.println("Somit bist du untergewichtig.");
 		}
 		else {
-			System.out.println("Somit bist du normalgewichtig");
+			System.out.println("Somit bist du normalgewichtig.");
 		}
 	}
 }
